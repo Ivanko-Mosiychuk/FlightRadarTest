@@ -4,10 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import ua.radar.base.BasePage;
 import ua.radar.base.BaseTest;
-import ua.radar.pages.MainPage;
-import ua.radar.pages.StatisticPage;
+import ua.radar.pageObject.MainPage;
+import ua.radar.pageObject.StatisticPage;
 
 public class StatisticPageTest extends BaseTest {
 
@@ -30,8 +29,13 @@ public class StatisticPageTest extends BaseTest {
     }
 
     @Test
-    public void testCountryIsInList(){
-    Assert.assertTrue(statisticPage.isCountryInList("Germany"));
+    public void testIsCountryInList(){
+    Assert.assertTrue(statisticPage.isCountryInRadarsList("Germany"));
+    }
+
+    @Test
+    public void testIsUsernameInList(){
+        Assert.assertTrue(statisticPage.isUsernameInUsersList("davekm3t"),"This name wasn't found in the list");
     }
 
     @AfterClass

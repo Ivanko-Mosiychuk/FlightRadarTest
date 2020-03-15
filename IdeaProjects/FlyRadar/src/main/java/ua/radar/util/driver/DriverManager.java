@@ -1,4 +1,4 @@
-package ua.radar.driver;
+package ua.radar.util.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

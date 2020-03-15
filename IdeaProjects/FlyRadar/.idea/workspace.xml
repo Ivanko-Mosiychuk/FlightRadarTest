@@ -75,33 +75,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.StatisticPageTest">
+  <component name="RunManager" selected="Gradle.StatisticPageTest.testIsUsernameInList">
     <configuration name="AircraftPageTest.testAircraftPageName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ua.radar.tests.AircraftPageTest.testAircraftPageName&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AircraftPageTest.testIsAllNamePresent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ua.radar.tests.AircraftPageTest.testIsAllNamePresent&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -156,6 +136,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="StatisticPageTest.testIsUsernameInList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ua.radar.tests.StatisticPageTest.testIsUsernameInList&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="StatisticPageTest.testRadarListIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -178,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StatisticPageTest.testIsUsernameInList" />
         <item itemvalue="Gradle.StatisticPageTest" />
         <item itemvalue="Gradle.StatisticPageTest.testCountryIsInList" />
         <item itemvalue="Gradle.StatisticPageTest.testRadarListIsEmpty" />
         <item itemvalue="Gradle.AircraftPageTest.testAircraftPageName" />
-        <item itemvalue="Gradle.AircraftPageTest.testIsAllNamePresent" />
       </list>
     </recent_temporary>
   </component>
@@ -198,5 +198,19 @@
       <updated>1583944749838</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/radar/tests/AircraftPageTest.java</url>
+          <line>32</line>
+          <properties class="ua.radar.tests.AircraftPageTest" method="nameProvider">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package ua.radar.pages;
+package ua.radar.pageObject;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

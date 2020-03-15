@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.592s</div>
+<div class="counter">0.616s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,16 +61,84 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testIsUsernameInList"></a>
+<h3 class="failures">testIsUsernameInList</h3>
+<span class="code">
+<pre>java.lang.AssertionError: This name wasn't found in the list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at ua.radar.tests.StatisticPageTest.testIsUsernameInList(StatisticPageTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -81,60 +149,26 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testCountryIsInList</td>
-<td class="success">0.450s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testRadarListIsEmpty</td>
-<td class="success">0.142s</td>
-<td class="success">passed</td>
+<td class="failures">testIsUsernameInList</td>
+<td class="failures">0.616s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>Before class StatisticPageTest
-50
 </pre>
 </span>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[1584275847.275][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275847.443][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275847.547][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275847.659][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275847.767][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275847.872][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275847.977][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.080][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.203][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.368][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.508][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.638][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.755][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.861][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275848.968][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.071][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.182][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.287][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.401][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.508][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.631][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.739][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275849.869][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275850.004][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275850.155][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275850.332][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275850.945][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275851.201][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275851.901][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275852.250][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275852.756][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584275853.039][SEVERE]: Timed out receiving message from renderer: 0.100
+<pre>[1584295402.619][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584295403.000][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584295403.380][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584295403.627][SEVERE]: Timed out receiving message from renderer: 0.100
 </pre>
 </span>
 </div>
@@ -146,7 +180,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 15 мар. 2020 г., 14:37:41</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 15 мар. 2020 г., 20:03:34</p>
 </div>
 </div>
 </body>

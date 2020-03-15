@@ -6,10 +6,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ua.radar.base.BaseTest;
-import ua.radar.pages.AircraftPage;
-import ua.radar.pages.MainPage;
-
-import java.util.ArrayList;
+import ua.radar.pageObject.AircraftPage;
+import ua.radar.pageObject.MainPage;
 
 public class AircraftPageTest extends BaseTest {
 

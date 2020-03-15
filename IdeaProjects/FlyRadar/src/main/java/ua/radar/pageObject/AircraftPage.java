@@ -1,12 +1,10 @@
-package ua.radar.pages;
+package ua.radar.pageObject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ua.radar.base.BasePage;
 import ua.radar.util.DelayUtil;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AircraftPage extends BasePage {

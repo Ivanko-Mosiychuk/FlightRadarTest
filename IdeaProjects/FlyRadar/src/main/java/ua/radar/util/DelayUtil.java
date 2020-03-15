@@ -1,10 +1,9 @@
 package ua.radar.util;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import ua.radar.driver.DriverManager;
+import ua.radar.util.driver.DriverManager;
 
 public class DelayUtil {
     private static WebDriverWait wait;
